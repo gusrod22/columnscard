@@ -15,7 +15,7 @@ active-states.jpg
 ![image](https://user-images.githubusercontent.com/90981527/207486774-98aee9b0-9773-41a4-b106-586faed40b40.png)
 
 
-###  My Screenshot
+###  My solution:
 
 Mobile view: 
 ![image](https://user-images.githubusercontent.com/90981527/207486936-68735192-7e2d-4501-a85b-68a32999be26.png)
