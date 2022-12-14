@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-size: 15px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+      h3,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+
+      .orange-box {
+        background-color: hsl(31, 77%, 52%);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        grid-area: orange-box;
+      }
+      .cyan-box {
+        background-color: hsl(184, 100%, 22%);
+        grid-area: cyan-box;
+      }
+      .dark-cyan-box {
+        background-color: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        grid-area: dark-cyan-box;
+      }
+      p {
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-bottom: 30px;
+      }
+      body,
+      h1,
+      .button {
+        color: hsl(0, 0%, 95%);
+      }
+      h1 {
+        font-family: "Big Shoulders Display", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 20px 0;
+      }
+      p,
+      .button {
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        color: black;
+        background-color: white;
+        border-radius: 50px;
+        mix-blend-mode: screen;
+        width: 10em;
+        padding: .7em;
+      }
+      .content {
+        margin: 50px 0;
+      }
+      .color-box {
+        margin: auto;
+        width: 310px;
+        height: 400px;
+        padding: 40px;
+      }
+      a:link{
+        text-decoration: none;
+      }
+
+      @media only screen and (min-width: 1000px) {
+        .content {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          margin: 0;
+        }
+        .color-box {
+          margin: 0;
+          padding: 50px;
+          height: 450px;
+        }
+        .orange-box {
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 10px;
+        }
+        .dark-cyan-box {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 10px;
+        }
+        p {
+          padding-bottom: 80px;
+        }
+        a:hover{
+          color: white;
+          background: none;
+          border: solid 1px white;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="color-box orange-box">
+        <img class="icons" src="images/icon-sedans.svg" alt="orange-car" />
+        <h1>Sedans</h1>
+        <p>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <div class="color-box cyan-box">
+        <img src="images/icon-suvs.svg" alt="orange-car" />
+        <h1>SUVs</h1>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <div class="color-box dark-cyan-box">
+        <img src="images/icon-luxury.svg" alt="orange-car" />
+        <h1>Luxury</h1>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+    </div>
+  </body>
+</html>
